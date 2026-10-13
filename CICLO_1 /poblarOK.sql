@@ -29,7 +29,7 @@ INSERT INTO Participantes VALUES (2, 'Ana Torres', 2, 2);
 INSERT INTO Participantes VALUES (3, 'Carlos Ruiz', 3, NULL);
 INSERT INTO Participantes VALUES (4, 'Luis Gomez', 4, 3);
 -- Participante extra
-INSERT INTO Participantes VALUES (5, 'Pedro Gomez', 4, NULL);
+INSERT INTO Participantes VALUES (5, 'Pedro Gomez', 5, NULL);
 INSERT INTO Equipo VALUES (1, 5);
 
 INSERT INTO Jugador VALUES (2, 'ana.torres@example.com', 19, 1);
