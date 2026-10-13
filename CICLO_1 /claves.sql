@@ -24,7 +24,7 @@ ALTER TABLE Partidas ADD CONSTRAINT FK_partidas_torneo FOREIGN KEY (torneo) REFE
 ALTER TABLE Inscripciones ADD CONSTRAINT FK_inscripciones_torneo FOREIGN KEY (torneo) REFERENCES Torneos (idTorneo) ON DELETE CASCADE ON UPDATE CASCADE;
 ALTER TABLE Clasificacion ADD CONSTRAINT FK_Clasificacion_torneo FOREIGN KEY (torneo) REFERENCES Torneos (idTorneo) ON DELETE CASCADE ON UPDATE CASCADE;
 ALTER TABLE Participantes ADD CONSTRAINT FK_participantes_inscripcion FOREIGN KEY (inscripcion) REFERENCES Inscripciones(id_inscripcion) ON DELETE RESTRICT ON UPDATE CASCADE;
-ALTER TABLE Participantes ADD CONSTRAINT FK_participantes_clasificacion FOREIGN KEY (clasificacion) REFERENCES Clasificacion(idClasifiacion) ON DELETE SET NULL ON UPDATE CASCADE;
+ALTER TABLE Participantes ADD CONSTRAINT FK_participantes_clasificacion FOREIGN KEY (clasificacion) REFERENCES Clasificacion(idClasificacion) ON DELETE SET NULL ON UPDATE CASCADE;
 ALTER TABLE Equipo ADD CONSTRAINT FK_equipo_participante FOREIGN KEY (id_participante) REFERENCES Participantes (id_participante) ON DELETE CASCADE ON UPDATE CASCADE;
 ALTER TABLE Jugador ADD CONSTRAINT FK_jugador_participante FOREIGN KEY (id_participante) REFERENCES Participantes (id_participante) ON DELETE CASCADE ON UPDATE CASCADE;
 ALTER TABLE Jugador ADD CONSTRAINT FK_jugador_equipo FOREIGN KEY (equipo) REFERENCES Equipo (id_participante) ON DELETE SET NULL ON UPDATE CASCADE;
