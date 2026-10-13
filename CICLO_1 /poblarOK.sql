@@ -18,6 +18,7 @@ INSERT INTO Inscripciones VALUES (1, '2026-09-20', 1);
 INSERT INTO Inscripciones VALUES (2, '2026-09-21', 1);
 INSERT INTO Inscripciones VALUES (3, '2026-09-21', 1);
 INSERT INTO Inscripciones VALUES (4, '2026-10-25', 2);
+INSERT INTO Inscripciones VALUES (5, '2026-10-26', 2);  
 
 INSERT INTO Clasificacion VALUES (1, 1);
 INSERT INTO Clasificacion VALUES (2, 1);
